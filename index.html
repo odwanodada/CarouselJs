@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2b1e7ab026.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <!--Carousel-->
+    <div id="carousel">
+
+        <!--Carousel-container-->
+        <div id="carousel-container"></div>
+
+        <div id="carousel-bullets"></div>
+
+
+        <!--Carousel Buttons-->
+        <button id="carousel-left" onclick="changesSlide(-1)">
+            <i class="fas fa-angle-left"></i>
+
+        </button>   
+        
+        <button id="carousel-right" onclick="changesSlide(1)">
+            <i class="fas fa-angle-right"></i>
+
+        </button>
+    </div>
+
+</body>
+<script>
+
+function changesSlide(x) {
+  showCarousel(slideIndex += x);
+}
+
+function changesSlide(x) {
+  showCarousel(slideIndex = x);
+}
+
+function showCarousel(){
+    let carousel = {
+    title:"CAROUSEL",
+    image:`https://picsum.photos/id/${Math.floor(Math.random*1000)+1}/900`,
+    description:"Lorem ipsum"
+  };
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+</html>

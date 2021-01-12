@@ -1,0 +1,46 @@
+#carousel{
+    display: grid;
+    grid-template-columns: 30px 70vw 30px;
+    grid-template-rows: 50vh auto;
+    grid-template-areas: 
+      "leftCaret content rightCaret"
+      "......... bullets ..........";
+    
+    justify-items: center;
+    align-items: center;
+    text-align: center;  
+}
+
+#carousel #carousel-left,
+#carousel #carousel-right{
+    background-color: none;
+    border: none;
+    outline: none;
+    font-size: 4em;
+    color: grey;
+    transition: all 0.2s linear;
+}
+
+#carousel #carousel-left:hover,
+#carousel #carousel-right:hover{
+    color: black;
+}
+
+#carousel #carousel-left{
+    grid-area: leftCaret;
+}
+
+#carousel #carousel-right{
+    grid-area: rightCaret;
+}
+
+#carousel #carousel-container{
+    grid-area: content;
+    position: relative;
+    width: 100%;
+    padding: 2%;
+}
+
+#carousel #carousel-bullets{
+    grid-area: bullets;
+}
